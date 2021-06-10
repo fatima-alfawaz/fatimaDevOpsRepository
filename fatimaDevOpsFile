@@ -1,0 +1,14 @@
+$sudo yum update
+$ yum install java-1.8.0 -y
+$ /usr/sbin/alternatives –config java
+$ wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+$ rpm –import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+$ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+$ yum install jenkins -y
+$ service jenkins start
+$ yum install httpd -y
+$ service httpd start
+$ cat   /var/lib/jenkins/secrets/initialAdminPassword
+password
+$ yum install git -y
